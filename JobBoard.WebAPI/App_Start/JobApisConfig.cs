@@ -24,7 +24,7 @@ namespace JobBoard.WebAPI
                     while (true)
                     {
                         await jobService.GetJobs();
-                        await Task.Delay(TimeSpan.FromSeconds(15));
+                        await Task.Delay(TimeSpan.FromMinutes(30));
                     }
                 });
             }
